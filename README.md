@@ -40,51 +40,26 @@ Click on an Agenda item to navigate to the relevant section.
 
 # Initial Setup
 
+## This will differ to the lab, as you will need to set up your environment manually in order to work through the course. 
 > Here are the high level steps you need to take:
 
-1. - [ ] Run script to provision content
-2. - [ ] Log into Tableau Cloud + load content
+1. - [ ] Install Python
+2. - [ ] pip install -r requirements.txt
+3. - [ ] Install VSCode (or any other IDE you're familiar with) 
+4. - [ ] Ensure you have a Tableau Cloud site where you are an admin (Get a new developer site if you want)
+5. - [ ] Create a top level project in Tableau Cloud called "hotembed"
+6. - [ ] Upload workbook_userxxx.twbx from resources folder into project hotembed renaming it "workbook_hotembed"
+7. - [ ] Upload redirect_userxxx.twbx from resources folder into project hotembed renaming it "redirect_hotembed"
+8. - [ ] Create a new viewer user, this can be any email you want to use, just remember it for logging in with CA later
+9. - [ ] Change the variables at the top of EmbeddedPortal.py
+10. - [ ] hotUser = "hotembed" in line 16
+11. - [ ] Set the URL of your Tableau Cloud site and Site Name in lines 27 and 28
+12. - [ ] Launch a terminal window and run EmbeddedPortal.py (The exact command may depend on which terminal used) 
+13. - [ ] Luncnh a browser and point to "localhost"
 
+If successful you should see the TC23 menu screen!!! 
 
-### Step 1: Run script to provision content
-On the first page of the instructions manual, at the very top, you'll find a 'Start Provisioning Content' button. Click on it.
-
-![Image%205-8-23%20at%203.37%20PM.jpeg](Image%205-8-23%20at%203.37%20PM.jpeg)
-
-Next, a Provision Course shortcut should appear on the desktop. It may take up to 5 min for the shortcut to appear. And you may get an error in a red/maroon banner underneath the blue button..  This is fine. Let it run, and, if after 5 min the shortcut does not appear, raise your hand for help.
-
-Once the shortcut appears on the desktop, open it. The following will happen:
-- Kicks off a script that pulls all the files we need from a github repo
-- Opens Visual Studio Code and loads the relevant files for the first exercise
-- Starts the web server and opens the TC23 portal web app we'll use for embedding in a browser
-
-![Image%204-20-23%20at%203.19%20PM.jpeg](Image%204-20-23%20at%203.19%20PM.jpeg)
-
-These are the three places we will spend our time in today: VS Code for code development, the TC23 Web Portal for app testing, and the Tableau Cloud Site for tableau configuration.
-
-<b>If you are not able to successfully run the *Provision Course* script, please raise your hand and an assistant will come by. It may take up to 5 min to complete. </b>
-
-It is vital everyone can complete this step before moving on.
-
-<br/>
-###Step 2: Log into Tableau Cloud + load content
-Double-click on the *Tableau Cloud Site* desktop shortcut to open Tableau Cloud in an incognito browser. You'll want to keep this incognito browser for configuring Tableau Cloud separate from the other browser for viewing the TC23 Web Portal so that the cookies don't collide.
-
-Login with the following credentials (place your cursor, then click on the green T to auto-paste):
-
-Username = +++@lab.CloudCredential(TC2023-HOT20).Username@embeddedhot.com+++
-
-Password = +++Password1!+++
-
-Do the following:
-- Open the side menu --> Click Explore
-- Click the filter toggle on the right
-- Search for the *@lab.CloudCredential(TC2023-HOT20).Username* Project --> Click to open
-- Click *workbook_@lab.CloudCredential(TC2023-HOT20).Username*
-- Click *My TC Dash*
-
-If you are able to successfully load My TC Dash, then your setup is complete. (*It can take up to 45 sec for the viz to load*)
-
+## NB thoughout this course, where insturctions say log into Tableau, use your own user credentials you used to log into Tableau Cloud as an admin. Where the instructions are logging you into the portal using connected apps, use the new viewer user you set up in step 8 above. 
 ===
 
 # Lesson 1: Simple Embedding
