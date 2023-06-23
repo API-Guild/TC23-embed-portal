@@ -1,2 +1,0 @@
-$tabUser = get-content 'c:\Users\Administrator\labUser.txt'
-((Get-Content -path C:\Users\Administrator\Documents\HOT20\TC23-embed-portal-main\EmbedPortal.py -Raw) -replace 'user_default',$tabUser) | Set-Content -Path C:\Users\Administrator\Documents\HOT20\TC23-embed-portal-main\EmbedPortal.py
