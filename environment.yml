@@ -1,0 +1,12 @@
+name: tc23EmbedPortal
+channels:
+  - defaults
+dependencies:
+  - flask_cors=3.0.10
+  - requests=2.27.1
+  - pip=23.2.1
+  - pip:
+    - flask==2.1.1
+    - flask_wtf==1.0.1
+    - wtforms==3.0.1
+    - pyjwt==2.3.0
