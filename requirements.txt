@@ -4,3 +4,4 @@ Flask_WTF==1.0.1
 PyJWT==2.3.0
 requests==2.27.1
 WTForms==3.0.1
+Werkzeug==2.2.2
